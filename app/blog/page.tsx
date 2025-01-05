@@ -54,7 +54,7 @@ export default function BlogPage() {
           Meanwhile, feel free to explore other sections of my portfolio.
         </p>
       </div>
-      <ShootingStars className="absolute z-1" />
+      <ShootingStars className="absolute -z-10" />
     </section>
   );
 }

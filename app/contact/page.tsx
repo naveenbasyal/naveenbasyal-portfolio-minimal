@@ -78,7 +78,7 @@ export default function ContactPage() {
           </a>
         </div>
       </div>
-      <ShootingStars className="absolute z-1" />
+      <ShootingStars className="absolute -z-10" />
     </section>
   );
 }

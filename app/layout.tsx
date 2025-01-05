@@ -95,6 +95,6 @@ export default function RootLayout({
         </main>
         <Analytics />
       </body>
-    </html>
+  </html>
   );
 }

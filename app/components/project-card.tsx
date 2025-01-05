@@ -39,7 +39,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
           {/* <Link href={website} target="_blank" rel="noopener noreferrer">
             {title}
           </Link> */}
-          <LinkPreview url={website}>{title}</LinkPreview>
+          <LinkPreview  className="z-30" url={website}>{title}</LinkPreview>
         </h3>
       </div>
       <div className="text-neutral-600 dark:text-neutral-400 text-sm">

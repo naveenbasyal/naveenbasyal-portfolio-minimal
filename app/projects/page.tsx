@@ -72,7 +72,7 @@ export default function ProjectsPage() {
       <h1 className="font-medium text-2xl mb-4 tracking-tight">Projects 🚀</h1>
 
       {/* Projects Section */}
-      <div className="prose prose-neutral dark:prose-invert">
+      <div className="prose prose-neutral z-30 dark:prose-invert">
         {projectsData.map((project, index) => (
           <ProjectCard
             key={index}
@@ -83,7 +83,7 @@ export default function ProjectsPage() {
           />
         ))}
       </div>
-      <ShootingStars className="absolute z-1" />
+      <ShootingStars className="absolute -z-10" />
     </section>
   );
 }
