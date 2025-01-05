@@ -292,7 +292,7 @@ export default function Page() {
         </li>
       </ul>
 
-      <ShootingStars className="absolute z-1" />
+      <ShootingStars className="absolute -z-10" />
       <div>
         <a
           className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all text-neutral-600 dark:text-neutral-300 mt-3"

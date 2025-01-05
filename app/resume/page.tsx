@@ -182,7 +182,7 @@ export default function WorkPage() {
           </div>
         ))}
       </div>
-      <ShootingStars className="absolute z-1" />
+      <ShootingStars className="absolute -z-10" />
     </section>
   );
 }
