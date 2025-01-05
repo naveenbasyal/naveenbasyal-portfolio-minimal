@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Separator from "../components/separator";
 import { EnvelopeSimple } from "@phosphor-icons/react/dist/ssr";
+import { ShootingStars } from "app/components/ui/shooting-stars";
+
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -64,6 +66,7 @@ export default function ContactPage() {
         <h2 className="font-medium text-2xl mb-6 tracking-tight font-['monospace']">
           Let’s connect! Schedule a 1:1 meeting with me.
         </h2>
+
         <div>
           <a
             href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3jkXbpVZIz-zjZgJyJzNcjsNV2H1oUYHFEmkEB3oysn609M8HycdPOOp-tInpGE1G-htOsVkES"
@@ -75,6 +78,7 @@ export default function ContactPage() {
           </a>
         </div>
       </div>
+      <ShootingStars className="absolute z-1" />
     </section>
   );
 }

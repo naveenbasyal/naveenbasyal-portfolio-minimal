@@ -8,6 +8,9 @@ const nextConfig = {
         pathname: "/**", // Matches any path
       },
     ],
+    domains: [
+      "api.microlink.io", // Microlink Image Preview
+    ],
   },
   // async redirects() {
   // 	if (!process.env.POSTGRES_URL) {

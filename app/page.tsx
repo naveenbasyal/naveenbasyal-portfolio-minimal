@@ -10,6 +10,12 @@ import {
   LinkedinLogo,
   XLogo,
 } from "@phosphor-icons/react/dist/ssr";
+import { TextGenerateEffect } from "./components/ui/text-generate-effect";
+import { Cover } from "./components/ui/cover";
+import { LinkPreview } from "./components/ui/link-preview";
+import { SparklesCore } from "./components/ui/sparkles";
+import { Spotlight } from "./components/ui/Spotlight";
+import { ShootingStars } from "./components/ui/shooting-stars";
 
 export const metadata: Metadata = {
   title: "Naveen Basyal",
@@ -93,8 +99,12 @@ function SkillBadge({ skill }: { skill: { name: string; category: string } }) {
 export default function Page() {
   return (
     <section>
+      <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        fill="#2486d3"
+      />
       <header className="max-w-4xl mx-auto py-12">
-        <div className="flex items-start gap-8">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           {/* Profile Image with Gradient Border */}
           <div className="relative w-[120px] h-[120px] flex-shrink-0">
             <div
@@ -120,10 +130,10 @@ export default function Page() {
           <div className="flex flex-col gap-6">
             <h1 className="text-[30px] leading-tight">
               <span className="text-white font-extrabold">
-                Hey, I'm Naveen.{" "}
+                Hey, I'm <Cover>Naveen Basyal</Cover>. I'm a{" "}
               </span>
               <span className="text-[#949494] font-semibold">
-                I'm a Full Stack Developer
+                Full Stack Developer
               </span>
             </h1>
 
@@ -155,8 +165,28 @@ export default function Page() {
           </div>
         </div>
       </header>
+      <div className="w-[100%] h-10 relative">
+        {/* Gradients */}
+        <div className="absolute w-full inset-x-0  md:inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] md:w-3/4 blur-sm" />
+        <div className="absolute w-full inset-x-0  md:inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px md:w-3/4" />
+        <div className="absolute inset-x-28  md:inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+        <div className="absolute  inset-x-28 md:inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
 
-      <Separator />
+        {/* Core component
+        <SparklesCore
+          background="transparent"
+          minSize={0.4}
+          maxSize={1}
+          particleDensity={1200}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+        />
+
+        {/* Radial Gradient to prevent sharp edges */}
+        {/* <div className="absolute inset-0 w-full h-full bg-[#0c0f11] [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div> */}
+      </div>
+
+      {/* <Separator /> */}
       {/* Skills Section */}
       <div className="mt-8">
         <h2 className="text-2xl font-semibold text-white mb-4">
@@ -172,7 +202,7 @@ export default function Page() {
 
       <div className="mb-8 prose prose-neutral dark:prose-invert">
         <h2>Professional Work 💼👨‍💻</h2>
-        <p>
+        <div>
           I’m all about creating cool and user-friendly digital experiences.
           Right now, I’m a <strong>Full Stack Developer</strong> at{" "}
           <span className="not-prose">
@@ -191,18 +221,21 @@ export default function Page() {
           while making sure the backend runs like a dream. I am also managint to
           work with both the frontend and backend team to create and manage the
           database systems that power our apps.
-        </p>
+        </div>
       </div>
 
       <Separator />
 
       <div className="mb-8 prose prose-neutral dark:prose-invert">
         <h2>Achievements in Tech Competitions 🏆💻</h2>
-        <p>
+        <div>
           During my time at{" "}
-          <a href="https://www.cgc.edu.in/" target="_blank">
+          {/* <a href="https://www.cgc.edu.in/" target="_blank">
             Chandigarh Group of Colleges
-          </a>
+          </a> */}
+          <LinkPreview url="https://www.cgc.edu.in/">
+            <span className="underline">Chandigarh Group of Colleges</span>
+          </LinkPreview>
           , I actively participated in tech events and competitions. Winning
           &nbsp;
           <i className="px-2 py-1  dark:bg-zinc-900 rounded">
@@ -213,7 +246,7 @@ export default function Page() {
           Development Competition (2nd place) were some of my highlights. These
           experiences not only sharpened my technical skills but also taught me
           teamwork and problem-solving under pressure.
-        </p>
+        </div>
       </div>
 
       <Separator />
@@ -259,6 +292,7 @@ export default function Page() {
         </li>
       </ul>
 
+      <ShootingStars className="absolute z-1" />
       <div>
         <a
           className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all text-neutral-600 dark:text-neutral-300 mt-3"

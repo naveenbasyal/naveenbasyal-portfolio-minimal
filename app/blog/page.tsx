@@ -1,5 +1,6 @@
 // blog/page.tsx
 
+import { ShootingStars } from "app/components/ui/shooting-stars";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -53,6 +54,7 @@ export default function BlogPage() {
           Meanwhile, feel free to explore other sections of my portfolio.
         </p>
       </div>
+      <ShootingStars className="absolute z-1" />
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProjectCard from "../components/project-card";
+import { ShootingStars } from "app/components/ui/shooting-stars";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -82,6 +83,7 @@ export default function ProjectsPage() {
           />
         ))}
       </div>
+      <ShootingStars className="absolute z-1" />
     </section>
   );
 }

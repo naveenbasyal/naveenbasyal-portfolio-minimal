@@ -7,7 +7,10 @@
   background-color: #47a3f3;
   color: #fefefe;
 }
-
+* {
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
 :root {
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
@@ -30,6 +33,12 @@
 html {
   min-width: 360px;
   font-family: "Space Grotesk", serif !important;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  z-index: 9999;
 }
 
 .prose .anchor {

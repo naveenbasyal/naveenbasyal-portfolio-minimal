@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import WorkExperienceItem from "../components/work-experience-item";
 import EducationItem from "../components/education-item";
 import VolunteeringItem from "../components/volunteer-item";
+import { ShootingStars } from "app/components/ui/shooting-stars";
 
 export const metadata: Metadata = {
   title: "Resume",
@@ -80,7 +81,7 @@ const resumeData = {
       role: "Fullstack Developer (Intern)",
       period: "June 2022 - July 2022",
       location: "Mohali, Punjab",
-      website: "https://solitaireinfosys.com/",
+      website: "https://solitaireinfosystems.com/",
       technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
       responsibilities: [
         "Led the development of a REST API using Node.js, Express.js, and MongoDB to efficiently store data.",
@@ -181,6 +182,7 @@ export default function WorkPage() {
           </div>
         ))}
       </div>
+      <ShootingStars className="absolute z-1" />
     </section>
   );
 }

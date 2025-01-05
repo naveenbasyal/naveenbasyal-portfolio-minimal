@@ -4,7 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Navbar } from "./components/nav";
 import { GoogleAnalytics } from "@next/third-parties/google";
-
+import { Analytics } from "@vercel/analytics/react";
 import { PreloadResources } from "./preload";
 import Cmdk from "./components/CmdK";
 import Footer from "./components/footer";
@@ -71,6 +71,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={cx(
         "text-black bg-white dark:text-white dark:bg-[#0c0f11]",
         GeistSans.variable,
@@ -92,11 +93,8 @@ export default function RootLayout({
 
           <PreloadResources />
         </main>
+        <Analytics />
       </body>
-      {process.env.GOOGLE_ANALYTICS_ID &&
-        process.env.NODE_ENV === "production" && (
-          <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID} />
-        )}
     </html>
   );
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { FC } from "react";
 import Chip from "./chip";
+import { LinkPreview } from "./ui/link-preview";
 
 interface WorkExperienceItemProps {
   job: {
@@ -10,7 +11,7 @@ interface WorkExperienceItemProps {
     period: string;
     location: string;
     workType?: string;
-    website?: string;
+    website: string;
     technologies?: string[];
     responsibilities: string[];
     duration: string;
@@ -21,14 +22,15 @@ const WorkExperienceItem: FC<WorkExperienceItemProps> = ({ job }) => {
   return (
     <div>
       <h3 className="font-medium text-xl mb-1 tracking-tighter flex items-center">
-        <a
+        {/* <a
           target="_blank"
           rel="noopener noreferrer"
           className=""
           href={job.website}
         >
           {job.company}
-        </a>
+        </a> */}
+        <LinkPreview url={job.website}>{job.company}</LinkPreview>
       </h3>
       <p className="text-neutral-600 dark:text-neutral-400 text-sm">
         {job.role} | {job.period} |{" "}
@@ -51,6 +53,5 @@ const WorkExperienceItem: FC<WorkExperienceItemProps> = ({ job }) => {
     </div>
   );
 };
-
 
 export default WorkExperienceItem;
