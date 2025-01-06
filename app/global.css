@@ -37,6 +37,7 @@ html {
 body {
   overflow-x: hidden;
 }
+
 a {
   z-index: 9999;
 }
@@ -134,6 +135,12 @@ table {
 
 .prose .callout > p {
   margin: 0 !important;
+}
+.interactionspfp {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  touch-action: none;
 }
 
 .title {

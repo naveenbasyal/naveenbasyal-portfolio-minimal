@@ -42,7 +42,7 @@ export const SparklesCore = (props: ParticlesProps) => {
   const particlesLoaded = async (container?: Container) => {
     if (container) {
       controls.start({
-        opacity: 1,
+        opacity: .8,
         transition: {
           duration: 1,
         },

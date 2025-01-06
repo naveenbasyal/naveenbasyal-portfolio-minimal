@@ -4,13 +4,13 @@ import Badge from "./components/Badge";
 import ArrowIcon from "./components/ArrowIcon";
 import type { Metadata } from "next";
 import Separator from "./components/separator";
-import { Twitter, Linkedin, Github } from "lucide-react";
+
 import {
   GithubLogo,
   LinkedinLogo,
   XLogo,
 } from "@phosphor-icons/react/dist/ssr";
-import { TextGenerateEffect } from "./components/ui/text-generate-effect";
+
 import { Cover } from "./components/ui/cover";
 import { LinkPreview } from "./components/ui/link-preview";
 import { SparklesCore } from "./components/ui/sparkles";
@@ -104,6 +104,8 @@ export default function Page() {
         fill="#2486d3"
       />
       <header className="max-w-4xl mx-auto py-12">
+        
+
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           {/* Profile Image with Gradient Border */}
           <div className="relative w-[120px] h-[120px] flex-shrink-0">
@@ -119,8 +121,12 @@ export default function Page() {
                   height={120}
                   quality={100}
                   priority
+                  style={{
+                    pointerEvents: "none",
+                    userSelect: "none",
+                  }}
                   unoptimized={true}
-                  className="rounded-full"
+                  className="rounded-full interactionspfp "
                 />
               </div>
             </div>
@@ -298,7 +304,7 @@ export default function Page() {
           className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all text-neutral-600 dark:text-neutral-300 mt-3"
           rel="noopener noreferrer"
           target="_blank"
-          href="mailto:hey@naveenbasyal.com?subject=Hello naveen!"
+          href="mailto:naveenbasyal.001@gmail.com?subject=Hello naveen!"
         >
           <p className="h-7">
             <span className="mr-2 text-neutral-600">📧</span>
