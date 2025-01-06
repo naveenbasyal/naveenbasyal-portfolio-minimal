@@ -18,55 +18,50 @@ import { Spotlight } from "./components/ui/Spotlight";
 import { ShootingStars } from "./components/ui/shooting-stars";
 
 export const metadata: Metadata = {
-  title: "Naveen Basyal",
+  title: "Puneet Sharma",
   description:
-    "I’m a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
+    "I’m a Backend Developer from India, trying to make the internet a bit cooler one website at a time.",
   openGraph: {
-    title: "Naveen Basyal",
+    title: "Puneet Sharma",
     description:
-      "I’m a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
-    url: "https://naveenbasyal.com",
-    siteName: "Naveen Basyal's Portfolio",
+      "I’m a Backend Developer from India, trying to make the internet a bit cooler one website at a time.",
+    url: "https://puneetsharma.vercel.app",
+    siteName: "Puneet Sharma's Portfolio",
     images: [
       {
-        url: "https://cdn.naveenbasyal.com/open-graph/home.png",
+        url: "https://pbs.twimg.com/profile_images/1876288860264521728/Z3mBTqJE_400x400.jpg",
         height: 630,
-        alt: "Naveen Basyal",
+        alt: "Puneet Sharma",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Naveen Basyal",
+    title: "Puneet Sharma",
     description:
-      "I’m a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
-    images: ["https://cdn.naveenbasyal.com/open-graph/home.png"],
-    creator: "@naveenbasyal",
-    creatorId: "@naveenbasyal",
-    site: "@naveenbasyal",
-    siteId: "@naveenbasyal",
+      "I’m a Backend Developer from India, trying to make the internet a bit cooler one website at a time.",
+    images: ["https://pbs.twimg.com/profile_images/1876288860264521728/Z3mBTqJE_400x400.jpg"],
+    creator: "@puneetsharma",
+    creatorId: "@puneetsharma",
+    site: "@puneetsharma",
+    siteId: "@puneetsharma",
   },
 };
 
 const skills = [
-  { name: "Next.js", category: "Frontend" },
   { name: "Node.js", category: "Backend" },
   { name: "Express.js", category: "Backend" },
   { name: "React.js", category: "Frontend" },
-  { name: "Tailwind CSS", category: "Frontend" },
   { name: "Socket.io", category: "Backend" },
-  { name: "Redux", category: "Frontend" },
   { name: "JavaScript", category: "Language" },
   { name: "HTML", category: "Frontend" },
   { name: "CSS", category: "Frontend" },
   { name: "TypeScript", category: "Language" },
   { name: "REST", category: "Backend" },
-  { name: "MongoDB", category: "Database" },
   { name: "PostgreSQL", category: "Database" },
   { name: "AdonisJS", category: "Backend" },
   { name: "Redis", category: "Database" },
-  { name: "Svelte 5", category: "Frontend" },
   { name: "Docker", category: "DevOps" },
   { name: "Firebase", category: "Backend" },
 ];
@@ -130,17 +125,17 @@ export default function Page() {
           <div className="flex flex-col gap-6">
             <h1 className="text-[30px] leading-tight">
               <span className="text-white font-extrabold">
-                Hey, I'm <Cover>Naveen Basyal</Cover>. I'm a{" "}
+                Hey, I'm <Cover>Puneet Sharma</Cover>. I'm a{" "}
               </span>
               <span className="text-[#949494] font-semibold">
-                Full Stack Developer
+                Backend Developer
               </span>
             </h1>
 
             {/* Social Links */}
             <div className="flex gap-6">
               <Link
-                href={"https://twitter.com/naveen__basyal"}
+                href={"https://twitter.com/puneet_0052"}
                 className="text-white hover:opacity-80"
               >
                 <span className="sr-only">Twitter</span>
@@ -148,14 +143,14 @@ export default function Page() {
               </Link>
 
               <Link
-                href={"https://www.linkedin.com/in/naveenbasyal/"}
+                href={"https://www.linkedin.com/in/the-puneet-sharma/"}
                 className="text-white hover:opacity-80"
               >
                 <span className="sr-only">LinkedIn</span>
                 <LinkedinLogo size={24} />
               </Link>
               <Link
-                href={"https://github.com/naveenbasyal"}
+                href={"https://github.com/PuneetSharma52"}
                 className="text-white hover:opacity-80"
               >
                 <span className="sr-only">GitHub</span>
@@ -204,7 +199,7 @@ export default function Page() {
         <h2>Professional Work 💼👨‍💻</h2>
         <div>
           I’m all about creating cool and user-friendly digital experiences.
-          Right now, I’m a <strong>Full Stack Developer</strong> at{" "}
+          Right now, I’m a <strong>Backend Developer</strong> at{" "}
           <span className="not-prose">
             <Badge href="https://www.linkedin.com/company/hausvalley-com/">
               <Image
@@ -230,22 +225,20 @@ export default function Page() {
         <h2>Achievements in Tech Competitions 🏆💻</h2>
         <div>
           During my time at{" "}
-          {/* <a href="https://www.cgc.edu.in/" target="_blank">
-            Chandigarh Group of Colleges
-          </a> */}
           <LinkPreview url="https://www.cgc.edu.in/">
             <span className="underline">Chandigarh Group of Colleges</span>
           </LinkPreview>
-          , I actively participated in tech events and competitions. Winning
-          &nbsp;
-          <i className="px-2 py-1  dark:bg-zinc-900 rounded">
-            Acing the Race 2.0
+          , I consistently pursued excellence in academics and extracurriculars. My
+          dedication earned me a scholarship four times for maintaining a top-ten
+          position in my diploma program. Additionally, I secured certifications in
+          <i className="px-2 py-1 dark:bg-zinc-900 rounded">
+            Cyber Security Essentials (CISCO)
           </i>{" "}
-          Coding Competition (1st place) and&nbsp;
-          <i className="px-2 py-1  dark:bg-zinc-900 rounded">Bro Code</i> Web
-          Development Competition (2nd place) were some of my highlights. These
-          experiences not only sharpened my technical skills but also taught me
-          teamwork and problem-solving under pressure.
+          and{" "}
+          <i className="px-2 py-1 dark:bg-zinc-900 rounded">
+            Data Structures and Algorithms in Java (LinkedIn)
+          </i>
+          , demonstrating my commitment to enhancing my technical expertise.
         </div>
       </div>
 
@@ -254,11 +247,11 @@ export default function Page() {
       <div className="mb-8 prose prose-neutral dark:prose-invert">
         <h2>Personal Interests 💪🏻🎮</h2>
         <p>
-          When I’m not coding, I’m probably hitting the gym. I’m big on fitness
-          and love lifting weights. I also enjoy exploring new tech trends,
-          gaming, and hanging out with my friends. Fitness and tech are my
-          favorite combos, and I’m always thinking of ways to bring them
-          together.
+          Apart from coding, I enjoy staying fit by hitting the gym regularly. I am
+          passionate about software engineering and DevOps, always exploring ways to
+          combine fitness and technology to create innovative solutions. In my
+          leisure time, I also engage in gaming and learning emerging technologies to
+          stay ahead in the tech world.
         </p>
       </div>
 
@@ -267,8 +260,10 @@ export default function Page() {
       <div className="mb-8 prose prose-neutral dark:prose-invert">
         <h2>Writing ✍️📖</h2>
         <p>
-          I am thinking to write <Link href="/blog">blogs</Link> to help others
-          improve their engineering skills. Stay tuned for more content!
+          I aim to start writing <Link href="/blog">blogs</Link> that guide aspiring
+          developers in backend development, database management, and quality
+          assurance. Stay connected for insights into building scalable and reliable
+          systems!
         </p>
       </div>
 
@@ -284,7 +279,7 @@ export default function Page() {
             className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/naveenbasyal"
+            href="https://twitter.com/puneet_0052"
           >
             <ArrowIcon />
             <p className="h-7 ml-2">Follow me</p>
@@ -298,14 +293,15 @@ export default function Page() {
           className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all text-neutral-600 dark:text-neutral-300 mt-3"
           rel="noopener noreferrer"
           target="_blank"
-          href="mailto:hey@naveenbasyal.com?subject=Hello naveen!"
+          href="mailto:ps464123@gmail.com?subject=Hello Puneet!"
         >
           <p className="h-7">
             <span className="mr-2 text-neutral-600">📧</span>
-            naveenbasyal.001@gmail.com
+            ps464123@gmail.com
           </p>
         </a>
       </div>
+
     </section>
   );
 }

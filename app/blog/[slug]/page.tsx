@@ -18,10 +18,10 @@ export async function generateMetadata({
     publishedAt: publishedTime,
     summary: description,
   } = post.metadata;
-  // let ogImage = `https://naveenbasyal.com/ogs/ogs-bg-blog-${post.slug}.png`;
+  // let ogImage = `https://puneetsharma.com/ogs/ogs-bg-blog-${post.slug}.png`;
   let ogImage = post.metadata.ogImage
     ? post.metadata.ogImage
-    : `https://cdn.naveenbasyal.com/open-graph/blogs.png`;
+    : `https://cdn.puneetsharma.com/open-graph/blogs.png`;
 
   return {
     title,
@@ -31,7 +31,7 @@ export async function generateMetadata({
       description,
       type: "article",
       publishedTime,
-      url: `https://naveenbasyal.com/blog/${post.slug}`,
+      url: `https://puneetsharma.com/blog/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -43,10 +43,10 @@ export async function generateMetadata({
       title,
       description,
       images: [ogImage],
-      creator: "@naveenbasyal",
-      creatorId: "@naveenbasyal",
-      site: "@naveenbasyal",
-      siteId: "@naveenbasyal",
+      creator: "@puneetsharma",
+      creatorId: "@puneetsharma",
+      site: "@puneetsharma",
+      siteId: "@puneetsharma",
     },
   };
 }
@@ -74,10 +74,10 @@ export default function Blog({ params }) {
             image: post.metadata.ogImage
               ? `${post.metadata.ogImage}`
               : `${post.metadata.coverImage}`,
-            url: `https://naveenbasyal.com/blog/${post.slug}`,
+            url: `https://puneetsharma.com/blog/${post.slug}`,
             author: {
               "@type": "Person",
-              name: "Naveen Basyal",
+              name: "Puneet Sharma",
             },
           }),
         }}

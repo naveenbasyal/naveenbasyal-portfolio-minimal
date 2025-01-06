@@ -30,16 +30,16 @@ export function Navbar() {
     <aside className="-ml-[8px] mb-8 tracking-tight no-print z-50">
       <div className="lg:sticky lg:top-20">
         <nav
-          className="flex flex-row relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative items-center justify-between w-full" // Ensure width is 100%
+          className="flex flex-col space-y-5 md:space-y-1 md:flex-row relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative items-end md:items-center justify-between w-full" // Ensure width is 100%
           id="nav"
         >
-          <div className="flex flex-row space-x-3 pr-10">
+          <div className="flex flex-row space-x-0 md:space-x-3 md:pr-10">
             {Object.entries(navItems).map(([path, { name }]) => {
               return (
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all z-50 hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-2 px-4" // Increased padding for better consistency
+                  className="transition-all z-50 hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-2 px-2 md:px-4" // Increased padding for better consistency
                 >
                   {name}
                 </Link>

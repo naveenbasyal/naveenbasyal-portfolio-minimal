@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { PreloadResources } from "./preload";
 import Cmdk from "./components/CmdK";
 import Footer from "./components/footer";
+import { SparklesCore } from "./components/ui/sparkles";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://naveenbasyal.com/"),
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     title: "Naveen Basyal",
     description:
       "Passionate full stack developer from India. On the way to master programming.",
-    url: "https://naveenbasyal.com/",
+    url: "https://naveenbasyal.vercel.app/",
     siteName: "Naveen Basyal's Portfolio",
     locale: "en_US",
     type: "website",
@@ -48,9 +49,9 @@ export const metadata: Metadata = {
   twitter: {
     title: "Naveen Basyal",
     card: "summary_large_image",
-    creator: "@naveenbasyal",
-    creatorId: "@naveenbasyal",
-    site: "@naveenbasyal",
+    creator: "@naveen__basyal",
+    creatorId: "@naveen__basyal",
+    site: "@naveen__basyal",
     siteId: "@naveenbasyal",
     description:
       "Passionate full stack developer from India. On the way to master programming.",
@@ -79,6 +80,11 @@ export default function RootLayout({
       )}
     >
       <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+        />
+
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`}
@@ -90,11 +96,20 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
-
           <PreloadResources />
+          <div className="absolute inset-0 -z-50">
+            <SparklesCore
+              background="transparent"
+              particleDensity={8}
+              speed={3}
+              maxSize={3}
+              particleColor="#115178"
+              particleSize={10}
+            />
+          </div>
         </main>
         <Analytics />
       </body>
-  </html>
+    </html>
   );
 }

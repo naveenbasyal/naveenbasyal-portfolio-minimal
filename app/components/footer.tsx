@@ -9,22 +9,22 @@ import type { FC } from "react";
 const socials = [
   {
     name: "Email",
-    url: "mailto:naveenbasyal.001@gmail.com.com",
+    url: "mailto:puneetsharma.001@gmail.com.com",
     logo: EnvelopeSimple,
   },
   {
     name: "GitHub",
-    url: "https://github.com/naveenbasyal",
+    url: "https://github.com/puneetsharma",
     logo: GithubLogo,
   },
   {
     name: "X",
-    url: "https://x.com/naveen__basyal",
+    url: "https://x.com/puneet__sharma",
     logo: XLogo,
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/naveenbasyal/",
+    url: "https://www.linkedin.com/in/puneetsharma/",
     logo: LinkedinLogo,
   },
 ];

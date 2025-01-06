@@ -9,34 +9,34 @@ import { ShootingStars } from "app/components/ui/shooting-stars";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Naveen Basyal via email or schedule a meet.",
+  description: "Get in touch with Puneet Sharma via email or schedule a meet.",
   openGraph: {
-    title: "Contact Naveen Basyal",
+    title: "Contact Puneet Sharma",
     description:
-      "Reach out to Naveen Basyal via email or schedule a 1:1 meeting.",
-    url: "https://naveenbasyal.com/contact",
-    siteName: "Naveen Basyal's Portfolio",
+      "Reach out to Puneet Sharma via email or schedule a 1:1 meeting.",
+    url: "https://puneetsharma.vercel.app/contact",
+    siteName: "Puneet Sharma's Portfolio",
     images: [
       {
-        url: "https://pbs.twimg.com/profile_images/1874309958344273920/eF3_2X6X_400x400.jpg",
+        url: "https://pbs.twimg.com/profile_images/1876288860264521728/Z3mBTqJE_400x400.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact Naveen Basyal",
+        alt: "Contact Puneet Sharma",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Naveen Basyal",
-    description: "Connect with Naveen Basyal via email or schedule a meeting.",
+    title: "Contact Puneet Sharma",
+    description: "Connect with Puneet Sharma via email or schedule a meeting.",
     images: [
-      "https://pbs.twimg.com/profile_images/1874309958344273920/eF3_2X6X_400x400.jpg",
+      "https://pbs.twimg.com/profile_images/1876288860264521728/Z3mBTqJE_400x400.jpg",
     ],
-    creator: "@naveenbasyal",
-    creatorId: "@naveen__basyal",
-    site: "@naveen__basyal",
-    siteId: "@naveenbasyal",
+    creator: "@Puneet_0052",
+    creatorId: "@puneet_sharma",
+    site: "@puneet_sharma",
+    siteId: "@Puneet_0052",
   },
 };
 
@@ -53,10 +53,10 @@ export default function ContactPage() {
         <div className="flex items-center mb-4">
           <EnvelopeSimple size={24} />
           <a
-            href="mailto:hello@naveenbasyal.com"
+            href="mailto:ps464123@gmail.com"
             className="underline text-sm ml-1"
           >
-            naveenbasyal.001@gmail.com
+            ps464123@gmail.com
           </a>
         </div>
 
@@ -69,7 +69,7 @@ export default function ContactPage() {
 
         <div>
           <a
-            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3jkXbpVZIz-zjZgJyJzNcjsNV2H1oUYHFEmkEB3oysn609M8HycdPOOp-tInpGE1G-htOsVkES"
+            href="https://calendar.app.google/ceEJ9hhzU4jCGpaa8"
             target="_blank"
             rel="noopener noreferrer"
             className="underline text-sm"

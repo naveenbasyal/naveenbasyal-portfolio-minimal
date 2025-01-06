@@ -7,33 +7,33 @@ import { ShootingStars } from "app/components/ui/shooting-stars";
 export const metadata: Metadata = {
   title: "Resume",
   description:
-    "A summary of Naveen Basyal’s skills, education, and professional experience as a Full-Stack Developer, including projects and achievements.",
+    "A summary of Puneet Sharma’s skills, education, and professional experience as a Full-Stack Developer, including projects and achievements.",
   openGraph: {
     type: "article",
-    url: `https://naveenbasyal.com/resume`,
-    title: "Naveen Basyal’s Resume",
-    siteName: "Naveen Basyal's Portfolio",
+    url: `https://puneetsharma.vercel.app/resume`,
+    title: "Puneet Sharma’s Resume",
+    siteName: "Puneet Sharma's Portfolio",
     description:
-      "Explore Naveen Basyal's resume, showcasing his professional experience, technical skills, and projects.",
+      "Explore Puneet Sharma's resume, showcasing his professional experience, technical skills, and projects.",
     images: [
       {
-        url: `https://cdn.naveenbasyal.com/open-graph/resume.png`,
+        url: `https://cdn.puneetsharma.com/open-graph/resume.png`,
         width: 1200,
         height: 630,
-        alt: "Naveen Basyal's Resume",
+        alt: "Puneet Sharma's Resume",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Naveen Basyal's Resume",
+    title: "Puneet Sharma's Resume",
     description:
-      "Check out Naveen Basyal’s Full-Stack Developer resume, showcasing his skills and professional achievements.",
-    images: ["https://cdn.naveenbasyal.com/open-graph/resume.png"],
-    creator: "@naveenbasyal",
-    creatorId: "@naveenbasyal",
-    site: "@naveenbasyal",
-    siteId: "@naveenbasyal",
+      "Check out Puneet Sharma’s Full-Stack Developer resume, showcasing his skills and professional achievements.",
+    images: ["https://cdn.puneetsharma.com/open-graph/resume.png"],
+    creator: "@puneetsharma",
+    creatorId: "@puneetsharma",
+    site: "@puneetsharma",
+    siteId: "@puneetsharma",
   },
 };
 
@@ -58,17 +58,14 @@ const resumeData = {
   workExperience: [
     {
       company: "Hausvalley Pvt Ltd",
-      role: "Full-Stack Developer",
-      period: "July 2024 - Present",
+      role: "Backend Developer",
+      period: "Jun 2024 - Present",
       location: "Remote",
       workType: "Full-time",
       website: "https://hausvalley.com",
       technologies: [
-        "Next.js",
-        "Svelte 5",
         "Adonis Js",
         "PostgreSQL",
-        "Tailwind CSS",
       ],
       responsibilities: [
         "Designed and developed user interfaces for various service offerings for different websites.",
@@ -77,62 +74,89 @@ const resumeData = {
       duration: calculateDuration("2024-07-01", "Present"),
     },
     {
+      company: "Future Finders",
+      role: "Python Developer (Intern)",
+      period: "Jul 2022 - Aug 2022",
+      location: "Mohali, Punjab",
+      website: "https://futurefinders.in/",
+      technologies: ["Python", "Django", "PostgreSQL"],
+      responsibilities: [
+        "Developed a web application to manage some of the company's internal processes.",
+        "Implemented a database to store user data and task details.",
+      ],
+      duration: calculateDuration("2022-07-01", "2022-08-30"),
+    },
+    {
       company: "Solitaire Infosys",
-      role: "Fullstack Developer (Intern)",
-      period: "June 2022 - July 2022",
+      role: "Android Developer (Intern)",
+      period: "Jun 2022 - Jul 2022",
       location: "Mohali, Punjab",
       website: "https://solitaireinfosystems.com/",
-      technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
+      technologies: ["Java", "Android Studio", "SQLite"],
       responsibilities: [
-        "Led the development of a REST API using Node.js, Express.js, and MongoDB to efficiently store data.",
-        "Spearheaded the creation of a full-stack web application using React.js and MongoDB.",
+        "Developed a mobile application for a client to calculate their daily expenses and savings.",
+        "Implemented a local database to store user data and task details.",
       ],
       duration: calculateDuration("2022-06-01", "2022-07-31"),
+    },
+    {
+      company: "Solitaire Infosys",
+      role: "Android Developer (Intern)",
+      period: "Jun 2020 - Jul 2020",
+      location: "Mohali, Punjab",
+      website: "https://solitaireinfosystems.com/",
+      technologies: ["Java", "Android Studio", "SQLite"],
+      responsibilities: [
+        "Developed a mobile application for a client to manage their daily expenses and savings(Trackmypocket).",
+        "Implemented a local database to store user data and task details.",
+      ],
+      duration: calculateDuration("2020-06-01", "2020-07-31"),
     },
   ],
   education: [
     {
       institution: "Chandigarh Group of Colleges Mohali, Punjab",
-      logo: "https://cdn.naveenbasyal.com/logos/cgc.png",
+      logo: "https://cdn.puneetsharma.com/logos/cgc.png",
       degree: "B.Tech in Computer Science Engineering",
-      period: "2020 - 2024",
+      period: "2021 - 2024",
       location: "Mohali, Punjab",
     },
     {
-      institution: "St. Carmel School Ropar, Punjab",
-      logo: "https://cdn.naveenbasyal.com/logos/stcarmel.png",
-      degree: "Non-Medical, Secondary School",
-      period: "2018 - 2020",
-      location: "Ropar, Punjab",
+      institution: "Govt. Polytechnic College Hisar, Haryana",
+      logo: "https://cdn.puneetsharma.com/logos/gphisar.png",
+      degree: "Polytechnic Diploma in Computer Engineering",
+      period: "2019 - 2021",
+      location: "Hisar, Haryana",
     },
   ],
   projects: [
     {
-      name: "Kanbuddy",
+      name: "HausValley Backend",
       description:
-        "Built a Kanban task manager with real-time updates, enabling team collaboration and progress tracking. Implemented drag-and-drop for efficient task management.",
-      technologies: [
-        "Node.js",
-        "React",
-        "Express",
-        "Socket.io",
-        "Tailwind CSS",
-      ],
-      link: "https://kanbuddy.vercel.app",
+        "Developed a unified backend for the customer app, partner app, and official website, leveraging AdonisJS and PostgreSQL.",
+      technologies: ["AdonisJS", "PostgreSQL", "Lucid ORM"],
+      link: "https://apidev.hausvalley.com/",
     },
     {
-      name: "FileDesk",
+      name: "Codex AI Assistant",
       description:
-        "Developed an online print-ordering platform to reduce on-campus shop crowding, integrating Razorpay for payments and enabling convenient file management.",
-      technologies: ["Node.js", "React", "Express", "Socket.io", "Bootstrap"],
-      link: "https://filedesk.netlify.app",
+        "An AI-powered chat assistant integrating Google Gemini API, providing real-time responses to user queries.",
+      technologies: ["Express.js", "Vite", "Google Gemini API"],
+      link: "https://codex-chat-gpt-clone.vercel.app",
     },
     {
-      name: "Detoxifyme",
+      name: "Youtube Clone",
       description:
-        "Created a digital detox platform with challenges, leaderboards, and experience sharing. Implemented user authentication and leaderboard tracking.",
-      technologies: ["Node.js", "React", "Express", "MaterialUI", "JWT"],
-      link: "https://detoxifyme.netlify.app",
+        "A responsive clone of the Youtube homepage, built using React and Tailwind CSS.",
+      technologies: ["Rapid API", "Tailwind CSS", "React"],
+      link: "https://youtube-clone-by-puneet.netlify.app/",
+    },
+    {
+      name: "Portfolio Website",
+      description:
+        "Personal portfolio showcasing projects, skills, and professional achievements with a focus on responsive design.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      link: "https://puneetsharma.netlify.app",
     },
   ],
 };

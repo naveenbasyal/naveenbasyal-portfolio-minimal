@@ -1,7 +1,7 @@
 services:
-  naveenbasyal_com_nextjs:
-    image: naveenbasyal.com
-    container_name: naveenbasyal.com
+  puneetsharma_com_nextjs:
+    image: puneetsharma.com
+    container_name: puneetsharma.com
     working_dir: /app
     ports:
       - "3001:3000"

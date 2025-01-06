@@ -8,31 +8,31 @@ export const metadata: Metadata = {
   description:
     "Read my thoughts on engineering, design, and product development.",
   openGraph: {
-    title: "Naveen Basyal's Blog",
+    title: "Puneet Sharma's Blog",
     description:
       "Explore blog posts on engineering, design, and product development.",
-    url: "https://naveenbasyal.com/blog",
-    siteName: "Naveen Basyal's Portfolio",
+    url: "https://puneetsharma.com/blog",
+    siteName: "Puneet Sharma's Portfolio",
     images: [
       {
-        url: "https://cdn.naveenbasyal.com/open-graph/blogs.png",
+        url: "https://cdn.puneetsharma.com/open-graph/blogs.png",
         width: 1200,
         height: 630,
-        alt: "Naveen Basyal's Blog",
+        alt: "Puneet Sharma's Blog",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Naveen Basyal's Blog",
+    title: "Puneet Sharma's Blog",
     description:
       "Read blog posts on engineering, design, and product development.",
-    images: ["https://cdn.naveenbasyal.com/open-graph/blogs.png"],
-    creator: "@naveenbasyal",
-    creatorId: "@naveenbasyal",
-    site: "@naveenbasyal",
-    siteId: "@naveenbasyal",
+    images: ["https://cdn.puneetsharma.com/open-graph/blogs.png"],
+    creator: "@puneetsharma",
+    creatorId: "@puneetsharma",
+    site: "@puneetsharma",
+    siteId: "@puneetsharma",
   },
 };
 
