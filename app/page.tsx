@@ -115,7 +115,7 @@ export default function Page() {
             >
               <div className="h-full w-full rounded-full overflow-hidden bg-[#0B0B0B]">
                 <Image
-                  src="/pfp.png"
+                  src="/pfp.jpeg"
                   alt="Profile"
                   width={120}
                   height={120}
@@ -126,7 +126,7 @@ export default function Page() {
                     userSelect: "none",
                   }}
                   unoptimized={true}
-                  className="rounded-full interactionspfp "
+                  className="rounded-full h-full interactionspfp "
                 />
               </div>
             </div>
