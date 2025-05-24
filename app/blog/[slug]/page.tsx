@@ -18,10 +18,10 @@ export async function generateMetadata({
     publishedAt: publishedTime,
     summary: description,
   } = post.metadata;
-  // let ogImage = `https://naveenbasyal.com/ogs/ogs-bg-blog-${post.slug}.png`;
+  // let ogImage = `https://naveenbasyal.vercel.app/ogs/ogs-bg-blog-${post.slug}.png`;
   let ogImage = post.metadata.ogImage
     ? post.metadata.ogImage
-    : `https://cdn.naveenbasyal.com/open-graph/blogs.png`;
+    : `https://naveenbasyal.vercel.app/pfp.jpeg`;
 
   return {
     title,
@@ -31,7 +31,7 @@ export async function generateMetadata({
       description,
       type: "article",
       publishedTime,
-      url: `https://naveenbasyal.com/blog/${post.slug}`,
+      url: `https://naveenbasyal.vercel.app/blog/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -43,10 +43,10 @@ export async function generateMetadata({
       title,
       description,
       images: [ogImage],
-      creator: "@naveenbasyal",
-      creatorId: "@naveenbasyal",
-      site: "@naveenbasyal",
-      siteId: "@naveenbasyal",
+      creator: "@naveen__basyal",
+      creatorId: "@naveen__basyal",
+      site: "@naveen__basyal",
+      siteId: "@naveen__basyal",
     },
   };
 }
@@ -74,7 +74,7 @@ export default function Blog({ params }) {
             image: post.metadata.ogImage
               ? `${post.metadata.ogImage}`
               : `${post.metadata.coverImage}`,
-            url: `https://naveenbasyal.com/blog/${post.slug}`,
+            url: `https://naveenbasyal.vercel.app/blog/${post.slug}`,
             author: {
               "@type": "Person",
               name: "Naveen Basyal",

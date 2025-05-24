@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     title: "Contact Naveen Basyal",
     description:
       "Reach out to Naveen Basyal via email or schedule a 1:1 meeting.",
-    url: "https://naveenbasyal.com/contact",
+    url: "https://naveenbasyal.vercel.app/contact",
     siteName: "Naveen Basyal's Portfolio",
     images: [
       {
-        url: "https://pbs.twimg.com/profile_images/1874309958344273920/eF3_2X6X_400x400.jpg",
+        url: "https://naveenbasyal.vercel.app/pfp.jpeg",
         width: 1200,
         height: 630,
         alt: "Contact Naveen Basyal",
@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     title: "Contact Naveen Basyal",
     description: "Connect with Naveen Basyal via email or schedule a meeting.",
     images: [
-      "https://pbs.twimg.com/profile_images/1874309958344273920/eF3_2X6X_400x400.jpg",
+      "https://naveenbasyal.vercel.app/pfp.jpeg",
     ],
-    creator: "@naveenbasyal",
+    creator: "@naveen__basyal",
     creatorId: "@naveen__basyal",
     site: "@naveen__basyal",
-    siteId: "@naveenbasyal",
+    siteId: "@naveen__basyal",
   },
 };
 
@@ -53,7 +53,7 @@ export default function ContactPage() {
         <div className="flex items-center mb-4">
           <EnvelopeSimple size={24} />
           <a
-            href="mailto:hello@naveenbasyal.com"
+            href="mailto:hello@naveenbasyal.vercel.app"
             className="underline text-sm ml-1"
           >
             naveenbasyal.001@gmail.com

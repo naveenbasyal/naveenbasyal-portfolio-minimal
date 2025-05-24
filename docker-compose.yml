@@ -1,7 +1,7 @@
 services:
   naveenbasyal_com_nextjs:
-    image: naveenbasyal.com
-    container_name: naveenbasyal.com
+    image: naveenbasyal.vercel.app
+    container_name: naveenbasyal.vercel.app
     working_dir: /app
     ports:
       - "3001:3000"

@@ -11,11 +11,11 @@ export const metadata: Metadata = {
     title: "Naveen Basyal's Blog",
     description:
       "Explore blog posts on engineering, design, and product development.",
-    url: "https://naveenbasyal.com/blog",
+    url: "https://naveenbasyal.vercel.app/blog",
     siteName: "Naveen Basyal's Portfolio",
     images: [
       {
-        url: "https://cdn.naveenbasyal.com/open-graph/blogs.png",
+        url: "https://cdn.naveenbasyal.vercel.app/open-graph/blogs.png",
         width: 1200,
         height: 630,
         alt: "Naveen Basyal's Blog",
@@ -28,11 +28,11 @@ export const metadata: Metadata = {
     title: "Naveen Basyal's Blog",
     description:
       "Read blog posts on engineering, design, and product development.",
-    images: ["https://cdn.naveenbasyal.com/open-graph/blogs.png"],
-    creator: "@naveenbasyal",
-    creatorId: "@naveenbasyal",
-    site: "@naveenbasyal",
-    siteId: "@naveenbasyal",
+    images: ["https://naveenbasyal.vercel.app/pfp.jpeg"],
+    creator: "@naveen__basyal",
+    creatorId: "@naveen__basyal",
+    site: "@naveen__basyal",
+    siteId: "@naveen__basyal",
   },
 };
 

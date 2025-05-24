@@ -10,14 +10,14 @@ export const metadata: Metadata = {
     "A summary of Naveen Basyal’s skills, education, and professional experience as a Full-Stack Developer, including projects and achievements.",
   openGraph: {
     type: "article",
-    url: `https://naveenbasyal.com/resume`,
+    url: `https://naveenbasyal.vercel.app/resume`,
     title: "Naveen Basyal’s Resume",
     siteName: "Naveen Basyal's Portfolio",
     description:
       "Explore Naveen Basyal's resume, showcasing his professional experience, technical skills, and projects.",
     images: [
       {
-        url: `https://cdn.naveenbasyal.com/open-graph/resume.png`,
+        url: `https://naveenbasyal.vercel.app/pfp.jpeg`,
         width: 1200,
         height: 630,
         alt: "Naveen Basyal's Resume",
@@ -29,11 +29,11 @@ export const metadata: Metadata = {
     title: "Naveen Basyal's Resume",
     description:
       "Check out Naveen Basyal’s Full-Stack Developer resume, showcasing his skills and professional achievements.",
-    images: ["https://cdn.naveenbasyal.com/open-graph/resume.png"],
-    creator: "@naveenbasyal",
-    creatorId: "@naveenbasyal",
-    site: "@naveenbasyal",
-    siteId: "@naveenbasyal",
+    images: ["https://naveenbasyal.vercel.app/pfp.jpeg"],
+    creator: "@naveen__basyal",
+    creatorId: "@naveen__basyal",
+    site: "@naveen__basyal",
+    siteId: "@naveen__basyal",
   },
 };
 
@@ -56,6 +56,20 @@ function calculateDuration(start: string, end: string): string {
 
 const resumeData = {
   workExperience: [
+    {
+      company: "Strikebit",
+      role: "Full-Stack Developer",
+      period: "Feb 2025 - Present",
+      location: "Remote",
+      workType: "Freelance",
+      website: "https://strikebit.io",
+      technologies: ["Next.js", "PostgreSQL", "Tailwind CSS","Drizzle ORM","NodeJs","Express"],
+      responsibilities: [
+        "Telegram Mini App + Bot : Built using TON Blockchain for wallet management and decentralized features.",
+        "Admin Dashboard: Built a scalable prediction dashboard using Vite and React.js for efficient platform management.",
+      ],
+      duration: calculateDuration("2025-02-01", "Present"),
+    },
     {
       company: "Hausvalley Pvt Ltd",
       role: "Full-Stack Developer",
@@ -93,14 +107,14 @@ const resumeData = {
   education: [
     {
       institution: "Chandigarh Group of Colleges Mohali, Punjab",
-      logo: "https://cdn.naveenbasyal.com/logos/cgc.png",
+      logo: "https://cdn.naveenbasyal.vercel.app/logos/cgc.png",
       degree: "B.Tech in Computer Science Engineering",
       period: "2020 - 2024",
       location: "Mohali, Punjab",
     },
     {
       institution: "St. Carmel School Ropar, Punjab",
-      logo: "https://cdn.naveenbasyal.com/logos/stcarmel.png",
+      logo: "https://cdn.naveenbasyal.vercel.app/logos/stcarmel.png",
       degree: "Non-Medical, Secondary School",
       period: "2018 - 2020",
       location: "Ropar, Punjab",

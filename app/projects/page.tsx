@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     title: "Naveen Basyal's Projects",
     description:
       "Explore a variety of projects and open-source contributions by Naveen Basyal.",
-    creator: "@naveenbasyal",
-    site: "@naveenbasyal",
+    creator: "@naveen__basyal",
+    site: "@naveen__basyal",
   },
 };
 

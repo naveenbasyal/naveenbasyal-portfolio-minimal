@@ -5,7 +5,7 @@ export default function robots() {
         userAgent: "*",
       },
     ],
-    sitemap: "https://naveenbasyal.com/sitemap.xml",
-    host: "https://naveenbasyal.com",
+    sitemap: "https://naveenbasyal.vercel.app/sitemap.xml",
+    host: "https://naveenbasyal.vercel.app",
   };
 }

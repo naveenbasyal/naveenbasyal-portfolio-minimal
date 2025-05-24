@@ -11,7 +11,7 @@ import Footer from "./components/footer";
 import { SparklesCore } from "./components/ui/sparkles";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://naveenbasyal.com/"),
+  metadataBase: new URL("https://naveenbasyal.vercel.app/"),
   title: {
     default: "Naveen Basyal",
     template: "%s | Naveen Basyal",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/ogs/ogs-bg.png",
+        url: "/pfp.jpeg",
         width: 1200,
         height: 630,
         alt: "Naveen Basyal Full Stack Developer",
@@ -52,13 +52,13 @@ export const metadata: Metadata = {
     creator: "@naveen__basyal",
     creatorId: "@naveen__basyal",
     site: "@naveen__basyal",
-    siteId: "@naveenbasyal",
+    siteId: "@naveen__basyal",
     description:
       "Passionate full stack developer from India. On the way to master programming.",
-    images: ["/ogs/ogs-bg.png"],
+    images: ["/pfp.jpeg"],
   },
   icons: {
-    shortcut: "/favicon.png",
+    shortcut: "/favicon.jpeg",
   },
 };
 

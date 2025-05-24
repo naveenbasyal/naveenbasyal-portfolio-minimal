@@ -25,11 +25,11 @@ export const metadata: Metadata = {
     title: "Naveen Basyal",
     description:
       "I’m a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
-    url: "https://naveenbasyal.com",
+    url: "https://naveenbasyal.vercel.app",
     siteName: "Naveen Basyal's Portfolio",
     images: [
       {
-        url: "https://cdn.naveenbasyal.com/open-graph/home.png",
+        url: "https://naveenbasyal.vercel.app/pfp.jpeg",
         height: 630,
         alt: "Naveen Basyal",
       },
@@ -41,11 +41,11 @@ export const metadata: Metadata = {
     title: "Naveen Basyal",
     description:
       "I’m a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
-    images: ["https://cdn.naveenbasyal.com/open-graph/home.png"],
-    creator: "@naveenbasyal",
-    creatorId: "@naveenbasyal",
-    site: "@naveenbasyal",
-    siteId: "@naveenbasyal",
+    images: ["https://naveenbasyal.vercel.app/pfp.jpeg"],
+    creator: "@naveen__basyal",
+    creatorId: "@naveen__basyal",
+    site: "@naveen__basyal",
+    siteId: "@naveen__basyal",
   },
 };
 
@@ -104,16 +104,14 @@ export default function Page() {
         fill="#2486d3"
       />
       <header className="max-w-4xl mx-auto py-12">
-        
-
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           {/* Profile Image with Gradient Border */}
           <div className="relative w-[120px] h-[120px] flex-shrink-0">
             <div
-              className="absolute inset-0 rounded-full bg-gradient-to-br from-[#FF1B6B] to-[#FFA26B]"
+              className="absolute inset-0 rounded-full bg-gradient-to-br from-[#eeeeee] to-[#160a5c]"
               style={{ padding: "3px" }}
             >
-              <div className="h-full w-full rounded-full overflow-hidden bg-[#0B0B0B]">
+                <div className="h-full w-full rounded-full overflow-hidden bg-[#0B0B0B]">
                 <Image
                   src="/pfp.jpeg"
                   alt="Profile"
@@ -122,13 +120,15 @@ export default function Page() {
                   quality={100}
                   priority
                   style={{
-                    pointerEvents: "none",
-                    userSelect: "none",
+                  pointerEvents: "none",
+                  userSelect: "none",
+                  objectFit: "cover",
+                  transform: "scale(1.2)",
                   }}
                   unoptimized={true}
-                  className="rounded-full h-full interactionspfp "
+                  className="rounded-full h-full interactionspfp"
                 />
-              </div>
+                </div>
             </div>
           </div>
 
@@ -290,7 +290,7 @@ export default function Page() {
             className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/naveenbasyal"
+            href="https://twitter.com/naveen__basyal"
           >
             <ArrowIcon />
             <p className="h-7 ml-2">Follow me</p>
