@@ -27,6 +27,38 @@ export const metadata: Metadata = {
 
 const projectsData = [
   {
+    project: "Walldeed",
+
+    description:
+      "Built a campus print marketplace with full ecommerce flow, flexible pricing, and payment gateway integration",
+    technologies: [
+      "Next.js",
+      "Node.js",
+      "PostgreSql",
+      "Prisma",
+      "Cloudinary",
+      "Socket.io",
+      "Tailwind CSS",
+    ],
+    website: "https://walldeed.vercel.app/",
+  },
+  {
+    project: "Indistock",
+
+    description:
+      "Developed a platform offering affordable stock data APIs for 3000+ Indian stocks, secure authentication, and fast indicator analytics.",
+
+    technologies: [
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Drizzle",
+      "Redis",
+      "Tailwind CSS",
+    ],
+    website: "https://indistock-platform.vercel.app/",
+  },
+  {
     project: "Kanbuddy",
 
     description:

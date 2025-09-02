@@ -57,20 +57,6 @@ function calculateDuration(start: string, end: string): string {
 const resumeData = {
   workExperience: [
     {
-      company: "Strikebit",
-      role: "Full-Stack Developer",
-      period: "Feb 2025 - Present",
-      location: "Remote",
-      workType: "Freelance",
-      website: "https://strikebit.io",
-      technologies: ["Next.js", "PostgreSQL", "Tailwind CSS","Drizzle ORM","NodeJs","Express"],
-      responsibilities: [
-        "Telegram Mini App + Bot : Built using TON Blockchain for wallet management and decentralized features.",
-        "Admin Dashboard: Built a scalable prediction dashboard using Vite and React.js for efficient platform management.",
-      ],
-      duration: calculateDuration("2025-02-01", "Present"),
-    },
-    {
       company: "Hausvalley Pvt Ltd",
       role: "Full-Stack Developer",
       period: "July 2024 - Present",
@@ -89,6 +75,28 @@ const resumeData = {
         "Worked in backend to implement overall functionality of the application.",
       ],
       duration: calculateDuration("2024-07-01", "Present"),
+    },
+    {
+      company: "Strikebit",
+      role: "Full-Stack Developer",
+      period: "Feb 2025 - July 2025",
+      location: "Remote",
+      workType: "Contract",
+      website: "https://strikebit.io",
+      technologies: [
+        "Telegram Open Network",
+        "Next.js",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "Drizzle ORM",
+        "NodeJs",
+        "Express",
+      ],
+      responsibilities: [
+        "Telegram Mini App + Bot : Built using TON Blockchain for wallet management and decentralized features.",
+        "Admin Dashboard: Built a scalable prediction dashboard using Vite and React.js for efficient platform management.",
+      ],
+      duration: calculateDuration("2025-02-01", "Present"),
     },
     {
       company: "Solitaire Infosys",
@@ -121,6 +129,38 @@ const resumeData = {
     },
   ],
   projects: [
+    {
+      project: "Walldeed",
+
+      description:
+        "Built a campus print marketplace with full ecommerce flow, flexible pricing, and payment gateway integration",
+      technologies: [
+        "Next.js",
+        "Node.js",
+        "PostgreSql",
+        "Prisma",
+        "Cloudinary",
+        "Socket.io",
+        "Tailwind CSS",
+      ],
+      website: "https://walldeed.vercel.app/",
+    },
+    {
+      project: "Indistock",
+
+      description:
+        "Developed a platform offering affordable stock data APIs for 3000+ Indian stocks, secure authentication, and fast indicator analytics.",
+
+      technologies: [
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Drizzle",
+        "Redis",
+        "Tailwind CSS",
+      ],
+      website: "https://indistock-platform.vercel.app/",
+    },
     {
       name: "Kanbuddy",
       description:
