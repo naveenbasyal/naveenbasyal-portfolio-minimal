@@ -1,11 +1,8 @@
-// pages/ContactPage.tsx
-
 import type { Metadata } from "next";
 import Image from "next/image";
 import Separator from "../components/separator";
 import { EnvelopeSimple } from "@phosphor-icons/react/dist/ssr";
 import { ShootingStars } from "app/components/ui/shooting-stars";
-
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -30,9 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contact Naveen Basyal",
     description: "Connect with Naveen Basyal via email or schedule a meeting.",
-    images: [
-      "https://naveenbasyal.vercel.app/pfp.jpeg",
-    ],
+    images: ["https://naveenbasyal.vercel.app/pfp.jpeg"],
     creator: "@naveen__basyal",
     creatorId: "@naveen__basyal",
     site: "@naveen__basyal",

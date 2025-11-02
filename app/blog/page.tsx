@@ -1,5 +1,3 @@
-// blog/page.tsx
-
 import { ShootingStars } from "app/components/ui/shooting-stars";
 import type { Metadata } from "next";
 

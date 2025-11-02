@@ -10,6 +10,8 @@ import Cmdk from "./components/CmdK";
 import Footer from "./components/footer";
 import { SparklesCore } from "./components/ui/sparkles";
 
+import Chatbot from "./components/Chatbot/ChatBot";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://naveenbasyal.vercel.app/"),
   title: {
@@ -96,6 +98,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <Chatbot />
           <PreloadResources />
           <div className="absolute inset-0 -z-50">
             <SparklesCore

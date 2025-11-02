@@ -11,6 +11,8 @@
     "lint": "pnpm biome lint --write ./app"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@google/genai": "^1.28.0",
     "@next/third-parties": "^14.2.11",
     "@phosphor-icons/react": "^2.1.7",
     "@radix-ui/react-hover-card": "^1.1.4",
@@ -28,6 +30,7 @@
     "framer-motion": "^11.15.0",
     "geist": "1.1.0",
     "lucide-react": "^0.469.0",
+    "motion": "^12.23.24",
     "next": "^14.2.12",
     "next-mdx-remote": "^4.4.1",
     "postcss": "^8.4.31",
@@ -35,6 +38,7 @@
     "react": "18.2.0",
     "react-cmdk": "^1.3.9",
     "react-dom": "18.2.0",
+    "react-markdown": "^10.1.0",
     "react-tweet": "3.2.0",
     "sharp": "^0.33.5",
     "sugar-high": "^0.5.3",

@@ -11,11 +11,11 @@ import {
   XLogo,
 } from "@phosphor-icons/react/dist/ssr";
 
-import { Cover } from "./components/ui/cover";
 import { LinkPreview } from "./components/ui/link-preview";
-import { SparklesCore } from "./components/ui/sparkles";
+
 import { Spotlight } from "./components/ui/Spotlight";
 import { ShootingStars } from "./components/ui/shooting-stars";
+import { Cover } from "app/components/ui/cover";
 
 export const metadata: Metadata = {
   title: "Naveen Basyal",
@@ -108,27 +108,26 @@ export default function Page() {
           {/* Profile Image with Gradient Border */}
           <div className="relative w-[120px] h-[120px] flex-shrink-0">
             <div
-              className="absolute inset-0 rounded-full bg-gradient-to-br from-[#eeeeee] to-[#160a5c]"
+              className="absolute inset-0 rounded-full bg-gradient-to-br from-gray-600 via-white to-indigo-400"
               style={{ padding: "3px" }}
             >
-                <div className="h-full w-full rounded-full overflow-hidden bg-[#0B0B0B]">
+              <div className="h-full w-full rounded-full overflow-hidden bg-[#0B0B0B]">
                 <Image
                   src="/pfp.jpeg"
                   alt="Profile"
                   width={120}
                   height={120}
-                  quality={100}
-                  priority
+
                   style={{
-                  pointerEvents: "none",
-                  userSelect: "none",
-                  objectFit: "cover",
-                  transform: "scale(1.2)",
+                    pointerEvents: "none",
+                    userSelect: "none",
+                    objectFit: "cover",
+                    transform: "scale(1.2)",
                   }}
                   unoptimized={true}
                   className="rounded-full h-full interactionspfp"
                 />
-                </div>
+              </div>
             </div>
           </div>
 
